@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Pizza Order Form</title>
   <meta charset="utf-8">
@@ -9,14 +10,15 @@
   <ul>
     <div class="sidenav">
       <li><a href="index.html">About</a></li>
-      <li><a href="order.html">Order Online</a></li>
+      <li><a href="order.html">Order</a></li>
       <li><a href="gallery.html">Gallery</a></li>
   </ul>
   <br><br>
 </head>
+
 <body>
   <div class="container">
-    <img src="images/pexels-photo-803290.jpg" alt="pizza" style="width:100%;" height="450px">
+    <img src="https://images.pexels.com/photos/1166120/pexels-photo-1166120.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 " alt="pizza" style="width:100%;" height="450px">
     <div class="text-block">
       <div class="bottom-left"></div>
       <div class="top-left"></div>
@@ -28,7 +30,7 @@
       <br>
       <div id="sizetable">
         <h3 class="tablehead">Select size:</h3>
-        <input type="radio" name="size" value="Personal"> Personal<br>
+        <input type="radio" name="size" value="small"> small<br>
         <input type="radio" name="size" value="Medium"> Medium<br>
         <input type="radio" name="size" value="Large"> Large<br>
         <input type="radio" name="size" value="Extra-Large"> Extra-Large<br>
@@ -101,13 +103,13 @@
         <tr>
           <td id='quantity'></td>
           <td id='quantityprice'></td>
-        </tr>
-        <td><strong>CheckOut price:</strong></td>
-        <td id="totalprice"></td>
+        <tr>
+          <td><strong>CheckOut price:</strong></td>
+          <td id="totalprice"></td>
         </tr>
   </div>
-  </tbody>
-  </table>
+  </<table>
+  </table>>
   <div class="form-popup" id="myForm">
     <form action="" id="form" class="form-container">
       <p class="result"></p>
@@ -118,11 +120,9 @@
         <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
-
-  </div>
-  </div>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
   </script>
   <script src="js/scripts.js"></script>
 </body>
+
 </html>
