@@ -57,14 +57,15 @@
     </div>
     <br>
     <div id="meattable">
-      <h3 class="tablehead">Select your nyama-nyama choice:</h3>
+      <h3 class="tablehead">Select your nyama choice:</h3>
       <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
       <input type="checkbox" name="meat" value="Sausage"> Sausage<br>
       <input type="checkbox" name="meat" value="Bacon"> Bacon<br>
       <input type="checkbox" name="meat" value="Beef"> Beef<br>
       <input type="checkbox" name="meat" value="Chicken"> Chicken<br>
     </div>
-    
+    <h3 class="tablehead">Number of pizza?:</h3>
+    <input type="number" name="quantity" min="1" max="50" id="number">
     <br>
     <button id="calc" type="submit" onclick="invoice()" class="btn btn-warning"><i class="fa fa-shopping-cart"></i>totalprice</button> <br><br>
     <table class="pizza" style="width: 100%;" border="1" cellpadding="5">
