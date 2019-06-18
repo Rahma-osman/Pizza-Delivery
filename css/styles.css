@@ -1,5 +1,4 @@
 
-
 * {
   text-align: center;
 }
@@ -19,13 +18,15 @@ ul {
 li {
   display: inline;
   float: left;
-  color: white;
 }
 a {
   display: block;
   padding: 8px;
-  color: white;
   text-align: center;
+}
+
+.unsplash{
+  min-width: 100%;
 }
 .Home {
   font-family: fantasy !important;
