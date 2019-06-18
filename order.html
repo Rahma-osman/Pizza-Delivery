@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Order Form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <ul>
+    <div class="sidenav">
+      <li><a href="index.html">About</a></li>
+      <li><a href="order.html">Order Online</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+  </ul>
+  <br><br>
+</head>
+<body>
+  <div class="container">
+    <img src="images/pexels-photo-803290.jpg" alt="pizza" style="width:100%;" height="450px">
+    <div class="text-block">
+      <div class="bottom-left"></div>
+      <div class="top-left"></div>
+      <div class="top-right"></div>
+      <div class="bottom-right"></div>
+      <div class="centered"></div>
+      <h1> Menu</h1>
+      <br>
+      <br>
+      <div id="sizetable">
+        <h3 class="tablehead">Select size:</h3>
+        <input type="radio" name="size" value="Personal"> Personal<br>
+        <input type="radio" name="size" value="Medium"> Medium<br>
+        <input type="radio" name="size" value="Large"> Large<br>
+        <input type="radio" name="size" value="Extra-Large"> Extra-Large<br>
+      </div>
+      <br>
+      <div id="deliverytable">
+        <h3 class="tablehead">Delivery?:</h3>
+        <input type="radio" name="delivery" value="pick-up"> Pick-up<br>
+        <input type="radio" name="delivery" value="delivery"> Delivery<br>
+      </div>
+      <br>
+      <h3 class="tablehead">Select crust:</h3>
+      <input type="radio" name="crust" value="Plain"> Plain Crust<br>
+      <input type="radio" name="crust" value="Garlic Butter"> Garlic Butter Crust<br>
+      <input type="radio" name="crust" value="Cheese-Stuffed"> Cheese-Stuffed Crust<br>
+      <input type="radio" name="crust" value="Spicy"> Spicy Crust<br>
+      <input type="radio" name="crust" value="House Special"> House Special Crust<br>
+    </div>
+    <br>
+    <div id="saucetable">
+      <h3 class="tablehead">Select sauce:</h3>
+      <input type="radio" name="sauce" value="Marinara"> Marinara Sauce<br>
+      <input type="radio" name="sauce" value="White"> White Sauce<br>
+      <input type="radio" name="sauce" value="Barbecue"> Barbecue Sauce<br>
+      <input type="radio" name="sauce" value="No"> No Sauce<br>
+    </div>
+    <br>
+    <div id="meattable">
+      <h3 class="tablehead">Select your nyama-nyama choice:</h3>
+      <input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+      <input type="checkbox" name="meat" value="Sausage"> Sausage<br>
+      <input type="checkbox" name="meat" value="Bacon"> Bacon<br>
+      <input type="checkbox" name="meat" value="Beef"> Beef<br>
+      <input type="checkbox" name="meat" value="Chicken"> Chicken<br>
+    </div>
+    <h3 class="tablehead">Number of pizza?:</h3>
+    <input type="number" name="quantity" min="1" max="5" id="number">
+    <br>
+    <button id="calc" type="submit" onclick="invoice()" class="btn btn-warning"><i class="fa fa-shopping-cart"></i>totalprice</button> <br><br>
+    <table class="pizza" style="width: 100%;" border="1" cellpadding="5">
+      <tbody>
+        <tr>
+          <td id="size"></td>
+          <td id="sizeprice"></td>
+        </tr>
+        <tr>
+          <td id="sause"></td>
+          <td id="crustprice"></td>
+        </tr>
+        <tr>
+          <td id="cheese"></td>
+          <td id="cheeseprice"></td>
+        </tr>
+        <tr>
+          <td id="crust"></td>
+          <td id="sauceprice"></td>
+        </tr>
+        <tr>
+          <td id="vegetable"></td>
+          <td id="vegetableprice"></td>
+        </tr>
+        <tr>
+          <td id="meat"></td>
+          <td id="meatprice"></td>
+        </tr>
+        <tr>
+          <td id="del"></td>
+          <td id="delprice"></td>
+        </tr>
+        <tr>
+          <td id='quantity'></td>
+          <td id='quantityprice'></td>
+        </tr>
+        <td><strong>CheckOut price:</strong></td>
+        <td id="totalprice"></td>
+        </tr>
+  </div>
+  </tbody>
+  </table>
+  <div class="form-popup" id="myForm">
+    <form action="" id="form" class="form-container">
+      <p class="result"></p>
+      <h1>Location</h1>
+      <label for="location"><b></b></label>
+      <input type="text" placeholder="Enter Location" id="location" required>
+      <button type="submit" class="btn" id="send">Enter<br>
+        <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+  </script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
