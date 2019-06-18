@@ -40,13 +40,14 @@ function invoice() {
 
  console.log("deliveryPrice=" + deliveryPrice);
 
+ console.log("crustPrice=" + crustPrice);
  var crust = document.querySelector('input[name="crust"]:checked').value;
  console.log("crust=" + crust);
  var crustPrice = 300;
  if (crust = "Cheese-Stuffed") {
    crustPrice = 250;
  };
- console.log("crustPrice=" + crustPrice);
+
 
 
  var sauce = document.querySelector('input[name="sauce"]:checked').value;
