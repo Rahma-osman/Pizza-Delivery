@@ -10,7 +10,7 @@ function invoice() {
  var size = document.querySelector('input[name="size"]:checked').value;
  console.log("size=" + size);
  var sizePrice = 0;
- if (size === "Small") {
+ if (size === "small") {
    sizePrice = 750;
  };
  if (size === "Medium") {
@@ -79,11 +79,25 @@ function invoice() {
    meatDisplay = "No Meats";
  }
 
+ var totalPrice = (meatPrice + crustPrice + deliveryPrice + sizePrice);
+ console.log("totalPrice=" + totalPrice);
 
+ $("#size").html(size + " Pizza");
+ $("#sizeprice").html(" ksh" + sizePrice + ".00");
+ $("#crust").html(crust + " Crust");
+ $("#crustprice").html("+" + crustPrice + ".00");
+ $("#cheese").html(delivery + " delivery");
+ $("#cheeseprice").html("+" + deliveryPrice + ".00");
+ $("#sauce").html(sauce + " Sauce");
+ $("#sauceprice").html("+0.00");
+ $("#meat").html(meatDisplay);
+ $("#meatprice").html("+" + meatPrice + ".00");
+ $("#totalprice").html(" ksh" + totalPrice + ".00");
 
 
 
 };
+
 function onclick(event) {
  openForm()
 }
