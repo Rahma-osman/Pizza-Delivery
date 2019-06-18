@@ -4,12 +4,7 @@
 ## Description
 {This is a web application for pizza delivery that allows user to choose the size,type of pizza, the crust preferred for the pizza and the delivery location for the pizza.It also has different options the user can pay for the pizza  }
 ## Setup/Installation Requirements
-*
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+*clone from https://github.com/Rahma-osman/Pizza-Delivery
 ## Technologies Used
 html,
 css,
